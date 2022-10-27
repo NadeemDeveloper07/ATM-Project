@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM Project</title>
+</head>
+<body>
+    
+
+<h1>Condition Checking with if else</h1>
+<hr>
+
+<form onsubmit="checkPin(); return false">
+    <h3>ATM Machine</h3>
+</form>
+
+<h3>ATM Machine</h3>
+
+Enter Your Pin:
+<input type="number" id="userInputPin" required>
+ <button>Confirm</button>
+</form>
+<h4 id="errorMessage"></h4>
+
+
+<script>
+    let monyBox = 22000; // atm machine mony box
+    let cardDailyLimit =20000;
+    let accountBalance =50000;
+    
+   function checkPin()  {
+   console.log("I am Chacking Pin Code");
+
+  let userInputPin = document.querySelector("#userInputPin").value;
+
+  if (userInputPin.lenght < 4) {
+    document.querySelector("#errorMessage").innerHTML = 'you Must Enter 4 Digit Pin Number';
+    
+  }
+  if (userInputPin.lenght < 4) {
+    document.querySelector("#errorMessage").innerHTML = 'you Must Enter 4 Digit Pin Number';
+
+  }
+  
+
+
+
+
+
+
+
+ }
+
+
+
+
+
+
+
+</script>
+
+    
+</body>
+</html>
